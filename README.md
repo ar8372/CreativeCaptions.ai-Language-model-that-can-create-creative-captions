@@ -86,7 +86,13 @@ For the 1st step, I am using Encoder-Decoder type model(pretrained model from hu
 
 For the 2nd step, I have used GPT-2 Model from Hugging face and fine-tuned it. 
 In this step our model tries to change a sentence in a humorous/creative text given any input word or words it has never seen before.
-For this task , I took two datasets (short jokes from reddit + movie title puns). For the Jokes in our dataset we took only those which were question,answer types and started with Why,When,How,etc. Then processed all the data in this format
+For this task , I took two datasets (short jokes from reddit + movie title puns). <br>
+## Below is some samples from the datasets
+Type            |  Jokes from reddit             |  movie title puns
+:------------:|:-------------------------:|:-------------------------:
+Output |  ![](images/joke_ss.png)          |  ![](images/movie_ss.png)
+
+For the Jokes in our dataset we took only those which were question,answer types and started with Why,When,How,etc. Then processed all the data in this format
 <|soq|> question <|sep|> answer <|endoftext|>
 
 It looks like an input to Question answering system , only the whole string is treated as one string , instead of getting different token_type_ids for Questions and Asnwers<br>
