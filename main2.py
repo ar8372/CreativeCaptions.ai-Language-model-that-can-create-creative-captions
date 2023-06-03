@@ -1,8 +1,6 @@
 from modules import * 
 
-## Start Creative Captioning
-class config:
-    Tokenizer = GPT2Tokenizer.from_pretrained('gpt2-medium')
+
 
 model = VisionEncoderDecoderModel.from_pretrained("nlpconnect/vit-gpt2-image-captioning")
 feature_extractor = ViTFeatureExtractor.from_pretrained("nlpconnect/vit-gpt2-image-captioning")
@@ -46,6 +44,10 @@ def choose_from_top(probs, n=5):
     token_id = ind[choice][0]
     return int(token_id)
 
+## Start Creative Captioning
+class config:
+    Tokenizer = GPT2Tokenizer.from_pretrained('gpt2-medium')
+    
 # Model Loading
 model_inst = GPT2LMHeadModel.from_pretrained('gpt2-medium')
 special_tokens_dict = {'pad_token': '<PAD>','bos_token':'<soq>','sep_token':'<eoq>'}

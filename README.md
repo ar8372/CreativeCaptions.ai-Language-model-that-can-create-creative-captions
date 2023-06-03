@@ -73,3 +73,20 @@ To launch it on localhost `http://127.0.0.1:8000`, we run below cmd from the ter
 <p>
     <img src="images/screenshot.png" width="800" height="400" />
 </p>
+
+
+# How it works: 
+It addresses the problem in two steps: 
+1. It converts and image into simple caption 
+2. It converts simple captions into something more interesting/creative. 
+
+For the 1st step, I am using Encoder-Decoder type model(pretrained model from hugging face). 
+
+For the 2nd step, I have used  HuggingFace Library for GPT-2 Model. 
+In this step our model tries to change a sentence in a humorous/creative way given any input word or words it has never seen before.
+For this task , I took two datasets (one jokes + movie title puns). For the Jokes in our dataset we took only those which were question,answer types and started with Why,When,How,etc. Then processed all the data in this format
+
+<|soq|> question <|sep|> answer <|endoftext|>
+
+It looks like an input to Question answering system , only the whole string is treated as one string , instead of getting different token_type_ids for Questions and Asnwers
+
