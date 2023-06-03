@@ -13,10 +13,10 @@ max_length = 16
 num_beams = 4
 gen_kwargs = {"max_length": max_length, "num_beams": num_beams}
 
-def predict_step(image_paths):
+def predict_step(images_):
   images = []
-  for image_path in image_paths:
-    i_image = image_path
+  for image_ in images_:
+    i_image = image_
     if i_image.mode != "RGB":
       i_image = i_image.convert(mode="RGB")
 
@@ -47,7 +47,7 @@ def choose_from_top(probs, n=5):
 ## Start Creative Captioning
 class config:
     Tokenizer = GPT2Tokenizer.from_pretrained('gpt2-medium')
-    
+
 # Model Loading
 model_inst = GPT2LMHeadModel.from_pretrained('gpt2-medium')
 special_tokens_dict = {'pad_token': '<PAD>','bos_token':'<soq>','sep_token':'<eoq>'}
