@@ -60,3 +60,15 @@ pip install python-multipart
 pip install Pillow
 pip install uvicorn
 ```
+
+### Inference
+Everything is set up now. 
+We can now run `python main2.py images/Image6.png` from `terminal` to see the output for `Image6`.
+
+Next we wrap this codebase inside `fastapi` kind of microservice. And we can use this as an `API`. 
+To launch it on localhost `http://127.0.0.1:8000`, we run below cmd from the terminal. 
+`uvicorn main:app --reload`  
+> Below is the demo of how our page looks. 
+<p>
+    <img src="images/screenshot.png" width="500" height="120" />
+</p>
