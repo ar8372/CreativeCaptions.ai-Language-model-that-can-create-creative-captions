@@ -87,6 +87,8 @@ In this step our model tries to change a sentence in a humorous/creative way giv
 For this task , I took two datasets (short jokes from reddit + movie title puns). For the Jokes in our dataset we took only those which were question,answer types and started with Why,When,How,etc. Then processed all the data in this format
 <|soq|> question <|sep|> answer <|endoftext|>
 
-It looks like an input to Question answering system , only the whole string is treated as one string , instead of getting different token_type_ids for Questions and Asnwers
-short jokes from reddit: https://www.kaggle.com/datasets/abhinavmoudgil95/short-jokes
+It looks like an input to Question answering system , only the whole string is treated as one string , instead of getting different token_type_ids for Questions and Asnwers<br>
+
+## References/Datasources
+short jokes from reddit: https://www.kaggle.com/datasets/abhinavmoudgil95/short-jokes <br>
 movie title puns: https://www.kaggle.com/datasets/mikahama/movie-title-puns?select=humor_titles.csv
