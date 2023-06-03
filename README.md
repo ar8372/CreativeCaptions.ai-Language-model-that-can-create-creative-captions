@@ -9,5 +9,5 @@ Language Model that creates catchy, exciting, innovative, captivating, creative 
 </p>
 > Output 
 <p>
-    <img src="images/response5.png" width="800" height="400" />
+    <img src="images/response5.png" width="800" height="100" />
 </p>
