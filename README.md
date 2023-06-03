@@ -77,8 +77,8 @@ To launch it on localhost `http://127.0.0.1:8000`, we run below cmd from the ter
 
 # How it works: 
 It addresses the problem in two steps: 
-1. It converts and image into simple caption 
-2. It converts simple captions into something more interesting/creative. 
+1. It converts an image into simple caption 
+2. It converts simple captions into something more interesting/creative text. 
 
 For the 1st step, I am using Encoder-Decoder type model(pretrained model from hugging face). 
 
