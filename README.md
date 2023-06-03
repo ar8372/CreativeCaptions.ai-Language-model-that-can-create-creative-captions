@@ -70,5 +70,5 @@ To launch it on localhost `http://127.0.0.1:8000`, we run below cmd from the ter
 `uvicorn main:app --reload`  
 > Below is the demo of how our page looks. 
 <p>
-    <img src="images/screenshot.png" width="500" height="120" />
+    <img src="images/screenshot.png" width="800" height="400" />
 </p>
