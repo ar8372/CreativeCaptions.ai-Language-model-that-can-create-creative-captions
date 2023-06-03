@@ -22,6 +22,7 @@ Language Model that creates catchy, exciting, innovative, captivating, creative 
 <p>
     <img src="images/response6.png" width="500" height="120" />
 </p>
+
 # How to use it
 
 ## Environment setup
