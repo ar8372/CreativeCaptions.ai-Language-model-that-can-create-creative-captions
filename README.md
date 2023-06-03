@@ -48,7 +48,7 @@ CreativeCaptions.ai-Language-model-that-can-create-creative-captions/
 └── requirements.txt
 ```
 Change your working directory to `CreativeCaptions.ai-Language-model-that-can-create-creative-captions`. 
-Download the model `gpt2_medium_joke_insta.pt` from https://www.kaggle.com/code/raj401/inference-mnist and store it in `models_folder`
+Download the model `gpt2_medium_joke_insta.pt` from https://www.kaggle.com/datasets/raj401/creativetext and store it in `models_folder`
 
 ### Dependencies
 Install below libraries.<br>
